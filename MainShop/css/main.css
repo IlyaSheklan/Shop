@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+#menu{
+    margin: 0 0 30px 0;
+}
+
+#catalog{
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+#popup{
+    position: relative;
+}

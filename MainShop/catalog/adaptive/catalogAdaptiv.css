@@ -1,0 +1,41 @@
+@media (max-width: 800px) {
+    #catalog{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-items-block{
+        margin: 0 0 30px 0;
+    }
+
+    .catalog-list{
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-item{
+        margin: 0 10px 0 0;
+    }
+
+    .list-item:last-child{
+        margin: 0;
+    }
+
+    .list-item-link{
+        display: none;
+    }
+
+    .list-item i{
+        display: block;
+        padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 50px;
+        transition-duration: 0.4s;
+    }
+
+    .list-item i:hover{
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

@@ -1,0 +1,90 @@
+.popup__bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: #fff;
+    width: 500px;
+    padding: 35px;
+    transition: 0.5s all;
+}
+
+.popup.active{
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.popup__bg.active{ 
+    opacity: 1; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+.popup-close{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup__flex-container{
+    display: flex;
+    margin: 0 0 40px 0;
+}
+.popup__img-desc-block{
+    width: 270px;
+    margin: 0 20px 0 0;
+}
+.popup__img-block{
+    margin: 0 0 36px 0;
+}
+.popup-img{
+    width: 100%;
+}
+
+.popup__label{
+    color: #8E8E8E;
+    margin: 0 0 5px 0;
+}
+.popup-desc{
+    text-align: justify;
+}
+
+.popup__name-block{
+    margin: 0 0 5px 0;
+}
+.popup__prod-name{
+    font-weight: 600;
+}
+.popup__brand-block{
+    margin: 0 0 5px 0;
+}
+
+.popup__rating-block{
+    margin: 0 0 5px 0;
+}
+.popup__prod-rating{
+    color: #FFBB56;
+}
+
+.popup__prod-price{
+    font-weight: 600;
+}
+
+@media (max-width: 550px) {
+    .popup{
+        width: 95%;
+    }
+}
